@@ -1,0 +1,10 @@
+package sec09.exam02_blocking;
+
+public class NoResultExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

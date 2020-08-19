@@ -1,0 +1,14 @@
+package sec09.exam02_blocking;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class NoResultExample {
+
+	public static void main(String[] args) {
+		ExecutorService executorService=Executors.newFixedThreadPool(
+				Runtime.getRuntime().availableProcessors()
+		);
+	}
+
+}

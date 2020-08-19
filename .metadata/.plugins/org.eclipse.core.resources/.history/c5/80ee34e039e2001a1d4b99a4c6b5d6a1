@@ -1,0 +1,23 @@
+package sec09.exam01_excute_submit;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecuteVsSubmitExample {
+
+	public static void main(String[] args) {
+		ExecutorService executorService=Executors.newFixedThreadPool(2);
+		
+		Runnable runnable=new Runnable() {
+			@Override
+			public void run() {
+				System.out.println("작업 처리");
+			}
+		};
+		
+		executorService.execute(runnable);
+		
+		executorService.shutdown();
+	}
+
+}

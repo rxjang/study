@@ -1,0 +1,10 @@
+package sec09.exam01_excute_submit;
+
+public class ExecuteVsSubmitExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

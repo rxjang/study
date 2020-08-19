@@ -1,0 +1,11 @@
+package sec09.exam01_excute_submit;
+
+import java.util.concurrent.Executors;
+
+public class ExecuteVsSubmitExample {
+
+	public static void main(String[] args) {
+		ExecutorService executorService=Executors.newFixedThreadPool(2);
+	}
+
+}
