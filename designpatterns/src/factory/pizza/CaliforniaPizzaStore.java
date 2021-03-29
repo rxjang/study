@@ -5,15 +5,21 @@ public class CaliforniaPizzaStore extends PizzaStore{
     @Override
     Pizza createPizza(String item) {
         Pizza pizza = null;
+        PizzaIngredientFactory ingredientFactory
+                = new NYPizzaIngredientFactory();
 
         if(item.equals("cheese")) {
-            pizza = new CaliforniaStyleCheesePizza();
+            pizza = new CheesePizza(ingredientFactory);
+            pizza.setName("California Style Cheese Pizza");
         } else if(item.equals("pepperoni")) {
-            pizza = new CaliforniaStylePepperoniPizza();
+            pizza = new PepperoniPizza(ingredientFactory);
+            pizza.setName("California Style Pepperoni Pizza");
         } else if(item.equals("clam")) {
-            pizza = new CaliforniaStyleClamPizza();
+            pizza = new ClamPizza(ingredientFactory);
+            pizza.setName("California Style Clam Pizza");
         } else if(item.equals("veggie")) {
-            pizza = new CaliforniaStyleVeggiePizza();
+            pizza = new VeggiePizza(ingredientFactory);
+            pizza.setName("California Style Veggie Pizza");
         }
         return pizza;
     }
