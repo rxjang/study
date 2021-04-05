@@ -32,5 +32,12 @@ public class App {
         String [] names = {"me", "you", "they"};
         Arrays.sort(names, String::compareToIgnoreCase);
         System.out.println(Arrays.toString(names));
+
+        Greetings greetings = new DefaultGreetings("name");
+        greetings.printName();
+        greetings.printNameUpperCase();
+
+        //해당 타입 관련 헬퍼 또는 유틸리티 메소드를 제공할 때 인터페이스에 스태틱 메소드를 제공할 수 있다.
+        Greetings.printAnything();
     }
 }
