@@ -1,6 +1,6 @@
 package chap07;
 
-class Tv {
+class Tv2 {
     boolean power;
     int channel;
 
@@ -9,7 +9,7 @@ class Tv {
     void channelDown() { --channel; }
 }
 
-class CaptionTv extends Tv{
+class CaptionTv extends Tv2 {
     boolean caption;
     void displayCaption(String text) {
         if(caption) {
