@@ -21,7 +21,7 @@ Collections.sort(words, new Comparator<String>() {
 // 익명 클래스 방식을 아래와 같이 람다식으로 간단히 변경 가능
 Collections.sort(words, (s1, s2) -> Integer.compare(s1.length(), s2.length()));
 ```
-코드에는 반환값 타입의 언급이없다. 컴파일러가 문맥을 살펴 타입을 추론해준다. **타입을 명시해야 코드가 더 명확할 때만 제외하고는, 람다의 모튼 매게변수 타입은 생략하자.**
+코드에는 반환값 타입의 언급이없다. 컴파일러가 문맥을 살펴 타입을 추론해준다. **타입을 명시해야 코드가 더 명확할 때만 제외하고는, 람다의 모튼 매개변수 타입은 생략하자.**
 ``` java
 // 더 간결하게 만들 수 있다
 Collections.sort(words, Comparator.comparingInt(String::length));

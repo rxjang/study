@@ -45,7 +45,7 @@ public static <E extends Enum<E>> EnumSet<E> noneOf(Class<E> elementType) {
 2. 정적 팩터리 메서드는 프로그래머가 찾기 어렵다.
    그래서 흔히 사용하는 명명 방식들이 존재한다.
 ``` java
-// from: 매게변수를 하나 받아서 해당 타입의 인스턴스를 반환하는 형변환 메서드
+// from: 매개변수를 하나 받아서 해당 타입의 인스턴스를 반환하는 형변환 메서드
 Date d = Date.from(instant);
 // of: 여러 매개변수를 받아 적합한 타입의 인스턴스를 반환하는 집게 메서드
 Set<Rank> faceCards = EnumSet.of(JACK, QUEEN, KING);
