@@ -21,7 +21,6 @@ class HomeTheaterTestDriveBefore {
         // 5. 프로젝터 켜기
         projector.on()
         // 6. 프로젝터로 DVD 신호가 입력되도록 하기
-        projector.setInput(dvd)
         // 7. 프로젝터를 와이드 스크린 모드로 전환
         projector.wideScreenMode()
         // 8. 앱프를 켠다

@@ -5,6 +5,5 @@ class Projector {
     fun off() {}
     fun tvModel() {}
     fun sideScreenModel() {}
-    fun setInput(dvd: Dvd) {}
     fun wideScreenMode() {}
 }

@@ -17,7 +17,6 @@ class HomeTheaterFacade(
         lights.dim(10)
         screen.down()
         projector.on()
-        projector.setInput(dvd)
         projector.wideScreenMode()
         amp.on()
         amp.setDvd(dvd)
